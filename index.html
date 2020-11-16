@@ -1,1 +1,114 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .article-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 40px;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Cute girls Abac</h2>
+    <p>This page shows us all the gute girls to look out for in abac</p>
+    <header>
+        <h2>Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">VMS</a></li>
+                <li><a href="#">MSME</a></li>
+                <li><a href="#">CA</a></li>
+            </ul>
+        </nav>
+        <img class="article-img"
+            src="https://scontent.fbkk13-2.fna.fbcdn.net/v/t31.0-8/23783651_1636538383034187_8700433530710982951_o.jpg?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeF3Y7BufHrMb8uwmovvrU8i72z1O9AR4UnvbPU70BHhSbPb1NML-8BGYEpeI-WQNCE158i4ijj-ldvXxiJRewQS&_nc_ohc=lMXh60_xqCUAX-eWHeG&_nc_ht=scontent.fbkk13-2.fna&oh=9930074ee6893a4ca67a228c7bf3ca4b&oe=5FD5C00F" />
+        <article>
+            <h1>Nantaporn Ploy Pongpitak</h1>
+
+            <p>FB : https://www.facebook.com/ploy.pongpitak</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Taranjit singh 6011149</p>
+    </footer>
+
+</body>
+
+</html>
